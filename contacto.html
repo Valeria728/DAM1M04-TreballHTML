@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Crónicas de Drunagor - Contacto</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- HEADER (NO TOCADO) -->
+<header class="header">
+  <div class="logo">
+    <img src="img/logo.png" alt="Crónicas de Drunagor">
+    <h1>Crónicas de Drunagor</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="instrucciones.html">Instrucciones</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<!-- CONTENIDO -->
+<main>
+
+  <section class="instrucciones">
+    <h2>Contacto</h2>
+
+    <div class="introduccion">
+      <p>
+        ¿Tienes dudas sobre <strong>Crónicas de Drunagor</strong>?  
+        ¿Quieres enviar sugerencias, comentarios o contactar con los guardianes del reino?
+        Usa los canales oficiales o escríbenos directamente.
+      </p>
+    </div>
+
+    <section class="mecanicas">
+      <h3>Información de contacto</h3>
+      <ul>
+        <li><strong>Teléfono:</strong> <a href="tel:+34600111222">+34 600 111 222</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@drunagor.com">info@drunagor.com</a></li>
+        <li><strong>Dirección:</strong> Calle Ficticia 123, Barcelona</li>
+      </ul>
+    </section>
+
+    <section class="tablero">
+      <h3>Encuéntranos</h3>
+      <iframe 
+        src="https://www.google.com/maps?q=Barcelona&output=embed" 
+        width="100%" 
+        height="300" 
+        style="border:2px solid var(--dorado); border-radius:15px;">
+      </iframe>
+    </section>
+
+    <section class="principal">
+
+      <form class="formulario-contacto">
+        <input type="text" placeholder="Nombre" required pattern="[A-Za-z ]{3,}">
+        <input type="tel" placeholder="Teléfono" required pattern="[0-9]{9}">
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button class="btn">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </section>
+
+</main>
+
+<!-- FOOTER (NO TOCADO) -->
+<footer class="footer-container">
+  <div class="footer-content">
+    <p>&copy; 2026 Crónicas de Drunagor</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

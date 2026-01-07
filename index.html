@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Crónicas de Drunagor - Inicio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
+
 <body>
-    
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <img src="img/logo.png" alt="Crónicas de Drunagor">
+    <h1>Crónicas de Drunagor</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="instrucciones.html">Instrucciones</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Enfréntate a la oscuridad</h2>
+
+    <div class="hero-image-wrapper">
+      <img src="img/principal.png" alt="Paladín en acción" class="hero-img">
+    </div>
+
+    <p class="hero-text">
+      Un juego de mesa cooperativo donde cada decisión importa.
+    </p>
+
+    <!-- CTA SVG -->
+    <a href="instrucciones.html" class="hero-cta">
+
+      <span class="cta-text">VER INSTRUCCIONES DEL JUEGO</span>
+
+      <div class="cta-arrows">
+        <span class="cta-arrow main"></span>
+        <span class="cta-arrow shadow s1"></span>
+        <span class="cta-arrow shadow s2"></span>
+        <span class="cta-arrow shadow s3"></span>
+      </div>
+
+      <svg width="180" height="180" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="80" class="aura" />
+        <circle cx="150" cy="150" r="35" class="core" />
+      </svg>
+
+    </a>
+  </section>
+
+  <!-- AVENTURA -->
+  <section class="aventura">
+    <h3>Sobre la aventura</h3>
+    <p>
+      Explora Drunagor, derrota enemigos y coopera con otros héroes para salvar el reino.
+    </p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer-container">
+  <div class="footer-content">
+    <p>&copy; 2026 Crónicas de Drunagor</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
