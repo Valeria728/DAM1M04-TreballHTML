@@ -1,0 +1,638 @@
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(11, 11, 11, 0.9);
+    border-bottom: 2px solid var(--dorado);
+    border-radius: 15px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header nav a {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+
+.footer {
+  max-width: 900px;         
+  margin: 40px auto;          
+  padding: 20px 30px;
+  background-color: var(--negro);
+  border: 2px solid var(--dorado);
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;                 
+  box-shadow: 0 0 20px var(--dorado);
+  color: var(--blanco);
+}
+
+
+.social-icons a {
+  color: var(--dorado);
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 1px var(--dorado), 0 0 5px var(--dorado);
+}
+
+/*INSTRUCCIONES */
+
+.instrucciones {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  color: var(--blanco);
+}
+
+.instrucciones h2 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: var(--dorado);
+  margin-bottom: 50px;
+}
+
+
+.introduccion {
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid var(--dorado);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 25px rgba(212,175,55,0.4);
+}
+
+.introduccion p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.introduccion ul {
+  margin-top: 15px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/*MECANICAS*/
+
+.mecanicas {
+  margin-bottom: 60px;
+}
+
+.mecanicas h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.mecanicas ul {
+  background: rgba(0,0,0,0.7);
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+
+.mecanicas li {
+  margin-bottom: 15px;
+}
+
+
+/*PREPARACION DE LA PARTIDA*/
+.preparacion {
+  margin-bottom: 60px;
+}
+.preparacion h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+
+/*LIBRO*/
+.libro {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.libro p{
+  margin-bottom: 15px;
+  line-height: 1.7;
+  background: rgba(0,0,0,0.7);
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+
+.libro img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  margin-top: 100px;
+  
+}
+
+/*PREPARACIONES PARA EL JUEGO*/
+
+.preparacion li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10;
+}
+
+.principal{
+  text-align: justify;
+  background: rgba(0,0,0,0.7);
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px;  
+}
+
+.principal ul {
+  margin-top: 15px;
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+
+
+.principal .lista_secundaria {
+  margin-top: 15px;
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+/*TABLERO*/
+
+.tablero {
+  text-align: justify;
+  margin-bottom: 80px;
+}
+.tablero p {
+  margin-bottom: 105px;
+  line-height: 1.7;
+  background: rgba(0,0,0,0.7);
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+
+
+/*PERSONAJES*/
+
+.personajes p{
+  margin-bottom: 15px;
+  line-height: 1.7;
+  background: rgba(0,0,0,0.7);
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+.personajes .container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  perspective: 1400px;
+}
+
+
+/* TEXTO DE LOS PERSONAJES*/
+.personajes .card span {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+/*VILLANOS*/
+
+
+.villanos {
+  display: flex;              
+  justify-content: center;   
+  align-items: center;
+  gap: 50px;                  
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.villanos h3 {
+  font-size: 1.4rem;
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-bottom: 25px;
+  margin-right: 200px;
+}
+
+
+/*COMO JUGAR PASO A PASO*/
+
+.paso-a-paso {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.paso-a-paso p{
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+}
+.paso-a-paso .texto {
+  color: var(--blanco);
+  margin-bottom: 15px;
+  line-height: 1.7;
+  
+}
+.paso-a-paso h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+}
+
+.paso-a-paso ol {
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  text-align: justify;
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px; 
+}
+
+.paso-a-paso li {
+  margin-bottom: 15px;
+  margin-left: 30px;
+  line-height: 1.7;
+}
+
+
+/*IMAGENES DE COMBATE DE LOS VILLANOS*/
+
+.imagenes {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.imagenes h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+
+/*FORMAS DE COMBATE EN EL JUEGO*/
+.combate {
+  margin-bottom: 80px;
+}
+
+.combate h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+} 
+
+.combate ol{
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  text-align: justify;
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px; 
+}
+
+
+.enemigo h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.enemigo p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.enemigo .segundo {
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  text-align: justify;
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px; 
+.imagenes {
+  text-align: center;
+  margin-bottom: 80px;
+}}
+.enemigo li {
+  margin-left: 40px;
+}
+.amenaza {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.amenaza h3 {
+  color: var(--dorado);
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+}
+
+.amenaza ol {
+  background: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  text-align: justify;
+  border-left: 5px solid var(--dorado);
+  padding: 25px 40px;
+  border-radius: 15px; 
+}
+
+.amenaza li {
+  margin-left: 40px;
+}
+
+.escena {
+display: flex;
+gap: 50px;
+perspective: 1200px;
+}
+
+
+
+
+
+
+
+/*####HISTORIA####*/
+
+.historia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.historia h2 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  color: var(--dorado);
+  margin-bottom: 50px;
+  text-shadow: 0 0 15px rgba(212,175,55,0.4);
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid var(--dorado);
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.carousel input {
+  display: none;
+}
+
+
+.descripcion {
+  background: linear-gradient(145deg, #0b0b0b, #151515);
+  border: 1px solid rgba(212,175,55,0.4);
+  border-radius: 20px;
+  padding: 30px 35px;
+  margin-bottom: 40px;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.6);
+}
+
+
+.descripcion h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--dorado);
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(212,175,55,0.4);
+}
+
+
+.descripcion p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.descripcion strong {
+  color: var(--dorado);
+}
+
+
+
+.descripcion,
+.carousel {
+  animation: aparecer 0.8s ease both;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  main h2 {
+    font-size: 2.2rem;
+  }
+
+  .slides img {
+    height: 280px;
+  }
+
+  .descripcion {
+    padding: 25px;
+  }
+}
+
+
+
+
+/*####FORMULARIO DE CONTACTO####*/
+
+.formulario-contacto {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.formulario-contacto::before {
+  content: "Envíanos un mensaje";
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  color: var(--dorado);
+  text-shadow: 0 0 8px rgba(212,175,55,0.4);
+}
+
+.formulario-contacto input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.formulario-contacto textarea {
+  flex: 2;
+  min-width: 260px;
+  height: 90px;
+  resize: none;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-color: var(--dorado);
+  box-shadow: 0 0 12px rgba(212,175,55,0.5);
+}
+
+
+/*####SECCIONES ABOUT, EQUIPO Y DEMO####*/
+
+.about,
+.equipo,
+.demo {
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.about h2,
+.equipo h2,
+.demo h2 {
+  font-family: 'Cinzel', serif;
+  color: #d4af37;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-texto p {
+  font-family: 'Roboto', sans-serif;
+  color: #ddd;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+
+.miembros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.miembro i {
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.miembro p {
+  font-family: 'Cinzel', serif;
+  color: #f1e6b2;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+  
+.miembro span {
+  font-family: 'Roboto', sans-serif;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+
+
+.demo-texto {
+  color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid rgba(212,175,55,0.5);
+  box-shadow: 0 0 30px rgba(0,0,0,0.9);
+}
+
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .about,
+  .equipo,
+  .demo {
+    padding: 25px;
+  }
+
+  .miembros {
+    gap: 25px;
+  }
+
+  .miembro {
+    width: 100%;
+    max-width: 320px;
+  }
+}
