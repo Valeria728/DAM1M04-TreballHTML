@@ -1,0 +1,158 @@
+
+@media (max-width: 768px) {
+  .header, .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenes img {
+    width: 80%;
+    margin: 15px auto;
+  }
+}
+
+/*ANIMACIONES DE IMAGEN*/
+
+.hero-img {
+  width: 900px;          
+  height: auto;          
+  border-radius: 15px; 
+  box-shadow: 0 0 15px var(--dorado);
+  transition: transform 0.7s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);  
+}
+
+/*ANIMACIONES DEL SVG*/
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.cta-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--dorado);
+  padding: 12px 28px;
+  border: 2px solid var(--dorado);
+  border-radius: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero-cta:hover .cta-text {
+  background-color: var(--dorado);
+  color: var(--negro);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.cta-arrows {
+  position: relative;
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+
+.cta-arrow {
+  position: absolute;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border-left: 4px solid var(--dorado);
+  border-bottom: 4px solid var(--dorado);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.cta-arrow.main {
+  top: 0;
+}
+
+.cta-arrow.shadow {
+  opacity: 0.4;
+}
+
+.cta-arrow.shadow.s1 {
+  top: 22px;
+  transform: translateX(-50%) rotate(-45deg) scale(0.8);
+  opacity: 0.35;
+}
+
+.cta-arrow.shadow.s2 {
+  top: 44px;
+  transform: translateX(-50%) rotate(-45deg) scale(0.65);
+  opacity: 0.25;
+}
+
+.cta-arrow.shadow.s3 {
+  top: 66px;
+  transform: translateX(-50%) rotate(-45deg) scale(0.5);
+  opacity: 0.15;
+}
+
+
+
+@keyframes arrowDown {
+  0% {
+    transform: translate(-50%, 0) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 12px) rotate(-45deg);
+    opacity: 0.6;
+  }
+}
+
+
+
+.hero-cta svg {
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
+  margin-bottom: 80px;
+}
+
+
+.aura {
+  fill: none;
+  stroke: var(--negro);
+  stroke-width: 5;
+  opacity: 0.6;
+  animation: pulse 3s infinite;
+}
+
+
+.core {
+  fill: var(--negro);
+  animation: glow 2s infinite alternate;
+}
+
+
+@keyframes pulse {
+  0% {
+    r: 70;
+    opacity: 0.4;
+  }
+  100% {
+    r: 90;
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    fill: var(--dorado);
+  }
+  to {
+    fill: var(--negro);
+  }
+}
